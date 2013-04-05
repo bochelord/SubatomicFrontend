@@ -1,0 +1,47 @@
+[08-Nov-2012 10:21:40] PHP Warning:  Invalid argument supplied for foreach() in /home2/kthxbyec/public_html/subatomic/wp-content/plugins/google-analyticator/google-analyticator.php on line 450
+[08-Nov-2012 10:22:26] PHP Warning:  Invalid argument supplied for foreach() in /home2/kthxbyec/public_html/subatomic/wp-content/plugins/google-analyticator/google-analyticator.php on line 450
+[08-Nov-2012 10:22:31] PHP Warning:  Invalid argument supplied for foreach() in /home2/kthxbyec/public_html/subatomic/wp-content/plugins/google-analyticator/google-analyticator.php on line 450
+[08-Nov-2012 10:22:58] PHP Warning:  Invalid argument supplied for foreach() in /home2/kthxbyec/public_html/subatomic/wp-content/plugins/google-analyticator/google-analyticator.php on line 450
+[09-Jan-2013 13:26:22] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 5 for query SELECT date, time, ip,urlrequested, os, browser,feed,user, language, country, post_title
+			FROM wrd_statpress
+			WHERE (os<>'' OR browser <>'')
+				AND `spider` NOT LIKE '%Spam Bot%'
+			ORDER BY id DESC LIMIT ; made by do_action('toplevel_page_statpress-visitors/admin/luc_admin'), call_user_func_array, luc_main, luc_main_table_latest_hits
+[09-Jan-2013 13:26:22] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4 for query SELECT date, time, ip, urlrequested, referrer, search, searchengine, os, language, country
+			FROM wrd_statpress
+			WHERE search<>''
+			ORDER BY id DESC LIMIT ; made by do_action('toplevel_page_statpress-visitors/admin/luc_admin'), call_user_func_array, luc_main, luc_main_table_latest_search
+[09-Jan-2013 13:26:22] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 7 for query SELECT date, time, ip, referrer, urlrequested, os, language, country
+			FROM wrd_statpress
+			WHERE (referrer NOT LIKE 'http://www.subatomic-inc.com%')
+			    AND spider = ''
+				AND referrer <>''
+				AND searchengine = ''
+			ORDER BY id DESC LIMIT ; made by do_action('toplevel_page_statpress-visitors/admin/luc_admin'), call_user_func_array, luc_main, luc_main_table_latest_referrers
+[09-Jan-2013 13:26:22] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4 for query SELECT date, time, ip, urlrequested, feed, language, country, post_title
+			FROM wrd_statpress
+			WHERE feed<>''
+			ORDER BY id DESC LIMIT ; made by do_action('toplevel_page_statpress-visitors/admin/luc_admin'), call_user_func_array, luc_main, luc_main_table_latest_feeds
+[09-Jan-2013 13:26:22] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6 for query SELECT date, time, ip, urlrequested, spider, agent
+			FROM wrd_statpress
+			WHERE spider<>''
+				AND spider NOT LIKE '%spam bot'
+			ORDER BY id DESC
+			LIMIT ; made by do_action('toplevel_page_statpress-visitors/admin/luc_admin'), call_user_func_array, luc_main, luc_main_table_latest_spiders
+[09-Jan-2013 13:26:22] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 5 for query SELECT date, time, ip, urlrequested, spider, agent
+			FROM wrd_statpress
+			WHERE spider LIKE '%spam bot'
+			ORDER BY id DESC
+			LIMIT ; made by do_action('toplevel_page_statpress-visitors/admin/luc_admin'), call_user_func_array, luc_main, luc_main_table_latest_spambots
+[09-Jan-2013 13:26:22] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 9 for query SELECT date, time, ip, agent ,COUNT(ip) AS ipcount
+			FROM wrd_statpress
+			WHERE (os=''
+				OR browser='')
+				AND searchengine=''
+				AND spider=''
+			GROUP BY ip,agent
+			ORDER BY id DESC
+			LIMIT ; made by do_action('toplevel_page_statpress-visitors/admin/luc_admin'), call_user_func_array, luc_main, luc_main_table_latest_undefagents
+[25-Feb-2013 16:56:02 UTC] WordPress database error Table 'kthxbyec_wor1.wrd_wpgmza' doesn't exist for query DESC wrd_wpgmza made by activate_plugin, do_action('activate_wp-google-maps/wpGoogleMaps.php'), call_user_func_array, wpgmaps_activate, wpgmaps_handle_db
+[11-Mar-2013 16:02:51 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wrd_wpgmza ADD PRIMARY KEY (`id`) made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), call_user_func_array, wpgmaps_update_db_check, wpgmaps_handle_db, dbDelta
+[11-Mar-2013 16:02:51 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wrd_wpgmza_maps ADD PRIMARY KEY (`id`) made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), call_user_func_array, wpgmaps_update_db_check, wpgmaps_handle_db, dbDelta
